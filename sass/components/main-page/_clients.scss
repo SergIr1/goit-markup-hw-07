@@ -1,48 +1,35 @@
-.section-clients-title {
-    margin-bottom: 50px;
-
-    color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
-
 .menu-clients,
 .menu-clients-icon,
 .menu-clients-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	@extend %align;
 }
 
 .menu-clients-icon {
-    width: 170px;
-    height: 92px;
-}
+	width: 170px;
+	height: 92px;
 
-.menu-clients-icon:not(:last-child) {
-    margin-right: 30px;
+	&:not(:last-child) {
+		margin-right: 30px;
+	}
 }
 
 .menu-clients-link {
-    transition: color var(--transition-duration) var(--timing-function), border var(--transition-duration) var(--timing-function);
+	width: 100%;
+	height: 100%;
+	border: 1px solid var(--social-icon);
+	color: var(--social-icon);
+	border-radius: 4px;
 
-    width: 100%;
-    height: 100%;
-    border: 1px solid var(--social-icon);
-    color: var(--social-icon);
-    border-radius: 4px;
+	transition: color var(--transition-duration) var(--timing-function),
+		border var(--transition-duration) var(--timing-function);
+
+	&:hover,
+	&:focus {
+		color: var(--accent-text-color);
+		border: 1px solid var(--accent-text-color);
+	}
 }
 
 .logo-clients {
-    fill: currentColor;
-
-}
-
-.menu-clients-link:hover,
-.menu-clients-link:focus {
-    color: var(--accent-text-color);
-    border: 1px solid var(--accent-text-color);
+	fill: currentColor;
 }

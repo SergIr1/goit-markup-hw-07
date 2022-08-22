@@ -1,79 +1,74 @@
 .card-set {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin: 0;
-    padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	margin: 0;
+	padding: 0;
 }
 
 .portfolio-card-link-wrap {
-    transition: box-shadow var(--transition-duration) var(--timing-function);
-    display: block;
-    text-decoration: none;
+	display: block;
+	text-decoration: none;
 
-}
+	transition: box-shadow var(--transition-duration) var(--timing-function);
 
-.portfolio-card-link-wrap:hover,
-.portfolio-card-link-wrap:focus {
-    box-shadow: var(--card-hover-shadow);
-
+	&:hover,
+	&:focus {
+		box-shadow: var(--card-hover-shadow);
+	}
 }
 
 .card-content {
-    background-color: var(--white-text-color);
-    border-bottom: 1px solid var(--border-cards-color);
-    border-right: 1px solid var(--border-cards-color);
-    border-left: 1px solid var(--border-cards-color);
-    padding: 20px 24px;
+	background-color: var(--white-text-color);
+	border-bottom: 1px solid var(--border-cards-color);
+	border-right: 1px solid var(--border-cards-color);
+	border-left: 1px solid var(--border-cards-color);
+	padding: 20px 24px;
 }
 
-
 .filtre-section-title {
-    color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+	color: var(--title-text-color);
+	@include font(18px, 700, 36px);
+	letter-spacing: 0.06em;
 }
 
 .filtre-text {
-    color: var(--primary-text-color);
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.03em;
-    margin-top: 4px;
-    margin-right: 0;
+	color: var(--primary-text-color);
+	@include font(16px, 400, 30px);
+	letter-spacing: 0.03em;
+	margin-top: 4px;
+	margin-right: 0;
 }
 
 .card-ovarlay {
-    position: relative;
-    overflow: hidden;
+	position: relative;
+	overflow: hidden;
 }
 
 .ovarlay-card-content {
-    position: absolute;
-    left: 0;
-    top: 0;
-    overflow: auto;
+	position: absolute;
+	left: 0;
+	top: 0;
+	overflow: auto;
 
-    width: 100%;
-    height: 100%;
-    transform: translateY(100%);
-    transition: transform var(--transition-duration) var(--timing-function);
+	width: 100%;
+	height: 100%;
+	transform: translateY(100%);
 
-    display: block;
+	display: block;
 
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
-    color: var(--white-text-color);
+	font-family: "Roboto", sans-serif;
+	@include font(18px, 400, 28px);
+	letter-spacing: 0.03em;
+	color: var(--white-text-color);
 
-    background-color: var(--ovarlay-bg-color);
-    padding: 63px 24px;
-}
+	background-color: var(--ovarlay-bg-color);
+	padding: 63px 24px;
 
-.portfolio-card-link-wrap:hover .ovarlay-card-content,
-.portfolio-card-link-wrap:focus .ovarlay-card-content {
-    transform: translateY(0);
+	transition: transform var(--transition-duration) var(--timing-function);
+
+	.portfolio-card-link-wrap:hover &,
+	.portfolio-card-link-wrap:focus & {
+		transform: translateY(0);
+	}
 }

@@ -1,29 +1,28 @@
 .filtre {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+
+	& .filtre-button + .filtre-button {
+		margin-left: 8px;
+	}
 }
 
 .btn-filtre {
-    color: var(--title-text-color);
-    background-color: var(--bg-team-color);
+	color: var(--title-text-color);
+	background-color: var(--bg-team-color);
+	@include font(16px, 500, 26px);
+	padding: 6px 22px;
+	min-width: auto;
 
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.62;
-    padding: 6px 22px;
-    min-width: auto;
+	transition: color var(--transition-duration) var(--timing-function),
+		background-color var(--transition-duration) var(--timing-function),
+		box-shadow var(--transition-duration) var(--timing-function);
 
-    transition: color var(--transition-duration) var(--timing-function), background-color var(--transition-duration) var(--timing-function), box-shadow var(--transition-duration) var(--timing-function);
-}
-
-.btn-filtre:hover,
-.btn-filtre:focus {
-    color: var(--white-text-color);
-    background-color: var(--accent-text-color);
-    box-shadow: var(--secondory-card-shadow);
-}
-
-.filtre .filtre-button+.filtre-button {
-    margin-left: 8px;
+	&:hover,
+	&:focus {
+		color: var(--white-text-color);
+		background-color: var(--accent-text-color);
+		box-shadow: var(--secondory-card-shadow);
+	}
 }
