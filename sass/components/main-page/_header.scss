@@ -6,15 +6,14 @@
 .main-nav,
 .site-nav,
 .adress-nav,
-.icon-mailto,
-.icon-tel {
+.adress-nav__item {
 	@extend %align;
 }
 
 .site-nav {
 	margin-left: 93px;
 
-	& .item + .item {
+	& .site-nav__item + .site-nav__item {
 		margin-left: 50px;
 	}
 }
@@ -22,12 +21,12 @@
 .adress-nav {
 	margin-left: auto;
 
-	& .item + .item {
+	& .adress-nav__item + .adress-nav__item {
 		margin-left: 50px;
 	}
 }
 
-.site-nav-link {
+.site-nav__link {
 	position: relative;
 
 	display: block;
@@ -48,7 +47,7 @@
 	}
 }
 
-.current::after {
+.site-nav__link_current::after {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -62,7 +61,7 @@
 	border-radius: 2px;
 }
 
-.adress-nav-link {
+.adress-nav__link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -82,12 +81,7 @@
 	}
 }
 
-.link-icon-mailto {
-	fill: currentColor;
-	margin-right: 10px;
-}
-
-.link-icon-tel {
+.adress-nav__icon {
 	fill: currentColor;
 	margin-right: 10px;
 }

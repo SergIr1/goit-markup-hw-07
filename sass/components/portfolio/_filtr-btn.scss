@@ -3,12 +3,12 @@
 	justify-content: center;
 	margin-bottom: 50px;
 
-	& .filtre-button + .filtre-button {
+	& .filtre__item + .filtre__item {
 		margin-left: 8px;
 	}
 }
 
-.btn-filtre {
+.button_filtre {
 	color: var(--title-text-color);
 	background-color: var(--bg-team-color);
 	@include font(16px, 500, 26px);

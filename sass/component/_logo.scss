@@ -9,8 +9,6 @@
 
 .logo {
 	display: block;
-	padding-top: 24px;
-	padding-bottom: 25px;
 
 	transition: color var(--transition-duration) var(--timing-function);
 
@@ -20,7 +18,12 @@
 	}
 }
 
-.logo-web {
+.page-header__logo {
+	padding-top: 24px;
+	padding-bottom: 25px;
+}
+
+.logo__web {
 	color: var(--accent-text-color);
 }
 

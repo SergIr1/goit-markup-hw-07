@@ -1,13 +1,13 @@
-.section-work {
+.promo {
 	padding-top: 0;
 }
 
-.work {
+.promo__list {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.img-work {
+.promo__menu-item {
 	position: relative;
 	width: 370px;
 	margin-right: 30px;
@@ -17,7 +17,7 @@
 	}
 }
 
-.text-work {
+.promo__text {
 	position: absolute;
 	left: 0;
 	bottom: 0;

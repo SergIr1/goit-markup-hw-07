@@ -1,13 +1,13 @@
-.section-fon {
+.section_theme_fon {
 	background-color: var(--bg-team-color);
 }
 
-.menu-item-list {
+.team-list {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.content-title-text-team {
+.team-list__wrapper {
 	padding-top: 30px;
 	padding-bottom: 30px;
 	background-color: var(--white-text-color);
@@ -15,7 +15,7 @@
 	border-radius: 0px 0px 4px 4px;
 }
 
-.section-title-team {
+.team-list__subtitle {
 	margin-bottom: 10px;
 
 	color: var(--title-text-color);
@@ -24,12 +24,12 @@
 	letter-spacing: 0.03em;
 }
 
-.text-team {
+.team-list__text {
 	@include font(16px, 400, 19px);
 	text-align: center;
 	letter-spacing: 0.03em;
 }
 
-.menu-item-list .menu-item:not(:last-child) {
+.team-list .team-list__item:not(:last-child) {
 	margin-right: 30px;
 }

@@ -1,9 +1,9 @@
-.feature-list {
+.features-list {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.menu-item-advantage {
+.features-list__menu-item {
 	width: 270px;
 
 	& + & {
@@ -11,7 +11,7 @@
 	}
 }
 
-.icon-advantage {
+.features-list__wrapper {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -21,7 +21,7 @@
 	margin-bottom: 30px;
 }
 
-.section-title-advantage {
+.features-list__title {
 	margin-top: 0;
 	margin-bottom: 10px;
 
@@ -31,7 +31,7 @@
 	text-transform: uppercase;
 }
 
-.text-advantage {
+.features-list__text {
 	@include font(14px, 400, 24px);
 	letter-spacing: 0.03em;
 	margin-top: 0;
