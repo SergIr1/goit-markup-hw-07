@@ -80,8 +80,8 @@ img {
 }
 
 .menu-clients,
-.menu-clients__icon,
-.menu-clients__link, .promo__text, .main-header,
+.menu-clients__item,
+.menu-clients__link, .promo__text, .page-header__container,
 .main-nav,
 .site-nav,
 .adress-nav,
@@ -96,6 +96,24 @@ img {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.section__title {
+  margin-bottom: 50px;
+  color: var(--title-text-color);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1666666667;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.section_no-padding-top {
+  padding-top: 0;
+}
+
+.section_theme-fon {
+  background-color: var(--bg-team-color);
 }
 
 .container {
@@ -126,16 +144,6 @@ img {
 .button:hover, .button:focus {
   background-color: var(--bg-button-color);
   box-shadow: var(--first-card-shadow);
-}
-
-.section__title {
-  margin-bottom: 50px;
-  color: var(--title-text-color);
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.1666666667;
-  text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .backdrop {
@@ -332,7 +340,7 @@ img {
   background-color: var(--accent-text-color);
 }
 
-.menu-socials_theme_dark {
+.menu-socials_theme-dark {
   color: var(--social-icon);
 }
 
@@ -488,10 +496,10 @@ img {
   flex-wrap: wrap;
 }
 
-.features-list__menu-item {
+.features-list__item {
   width: 270px;
 }
-.features-list__menu-item + .features-list__menu-item {
+.features-list__item + .features-list__item {
   margin-left: 30px;
 }
 
@@ -524,21 +532,17 @@ img {
   margin-top: 0;
 }
 
-.promo {
-  padding-top: 0;
-}
-
 .promo__list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.promo__menu-item {
+.promo__item {
   position: relative;
   width: 370px;
   margin-right: 30px;
 }
-.promo__menu-item:nth-child(3n) {
+.promo__item:nth-child(3n) {
   margin-right: 0;
 }
 
@@ -558,10 +562,6 @@ img {
   background: var(--bg-work-color);
 }
 
-.section_theme_fon {
-  background-color: var(--bg-team-color);
-}
-
 .team-list {
   display: flex;
   flex-wrap: wrap;
@@ -575,7 +575,7 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list__subtitle {
+.team-list__title {
   margin-bottom: 10px;
   color: var(--title-text-color);
   font-size: 16px;
@@ -597,11 +597,11 @@ img {
   margin-right: 30px;
 }
 
-.menu-clients__icon {
+.menu-clients__item {
   width: 170px;
   height: 92px;
 }
-.menu-clients__icon:not(:last-child) {
+.menu-clients__item:not(:last-child) {
   margin-right: 30px;
 }
 

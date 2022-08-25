@@ -19,7 +19,7 @@
 
 <body class="page">
     <header class="page-header">
-        <div class="container main-header">
+        <div class="container page-header__container">
             <nav class="main-nav">
                 <a href="#" class="logo page-header__logo"><span class="logo__web">Web</span>Studio</a>
                 <ul class="site-nav list">
@@ -53,7 +53,7 @@
             <div class="container">
                 <h2 class="visually-hidden">Наши преимущества</h2>
                 <ul class="features-list list">
-                    <li class="features-list__menu-item">
+                    <li class="features-list__item">
                         <div class="features-list__wrapper"><svg width="70" height="70">
                                 <use href="./images/icons.svg#icon-antenna1"></use>
                             </svg></div>
@@ -61,7 +61,7 @@
                         <p class="features-list__text">Идейные соображения, а также начало повседневной работы по
                             формированию позиции.</p>
                     </li>
-                    <li class="features-list__menu-item">
+                    <li class="features-list__item">
                         <div class="features-list__wrapper"><svg width="70" height="70">
                                 <use href="./images/icons.svg#icon-clock1"></use>
                             </svg></div>
@@ -71,7 +71,7 @@
                             влечет за собой.
                         </p>
                     </li>
-                    <li class="features-list__menu-item">
+                    <li class="features-list__item">
                         <div class="features-list__wrapper"><svg width="70" height="70">
                                 <use href="./images/icons.svg#icon-diagram1"></use>
                             </svg></div>
@@ -81,7 +81,7 @@
                             обуславливает.
                         </p>
                     </li>
-                    <li class="features-list__menu-item">
+                    <li class="features-list__item">
                         <div class="features-list__wrapper"><svg width="70" height="70">
                                 <use href="./images/icons.svg#icon-astronaut1"></use>
                             </svg></div>
@@ -93,49 +93,48 @@
                 </ul>
             </div>
         </section>
-        <section class="section promo">
+        <section class="section section_no-padding-top">
             <div class="container">
                 <h2 class="section__title">Чем мы занимаемся</h2>
                 <ul class="promo__list list">
-                    <li class="promo__menu-item"><img src="./images/box_1.jpg" alt="програмирование" width="370" />
+                    <li class="promo__item"><img src="./images/box_1.jpg" alt="програмирование" width="370" />
                         <p class="promo__text">Десктопные приложения</p>
                     </li>
-                    <li class="promo__menu-item"><img src="./images/box_2.jpg" alt="мобильные приложения" width="370" />
+                    <li class="promo__item"><img src="./images/box_2.jpg" alt="мобильные приложения" width="370" />
                         <p class="promo__text">Мобильные приложения</p>
                     </li>
-                    <li class="promo__menu-item"><img src="./images/box_3.jpg" alt="ассоциативные технологии"
-                            width="370" />
+                    <li class="promo__item"><img src="./images/box_3.jpg" alt="ассоциативные технологии" width="370" />
                         <p class="promo__text">Дизайнерские решения</p>
                     </li>
                 </ul>
             </div>
         </section>
-        <section class="section section_theme_fon">
+        <section class="section section_theme-fon">
             <div class="container">
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="list team-list">
                     <li class="team-list__item"><img src="./images/img1.jpg" alt="Игорь Демьяненко" width="270" />
                         <div class="team-list__wrapper">
-                            <h3 class="team-list__subtitle">Игорь Демьяненко</h3>
+                            <h3 class="team-list__title">Игорь Демьяненко</h3>
                             <p lang="en" class="team-list__text">Product Designer</p>
                             <ul class="menu-socials team-list__menu-socials list">
                                 <li class="menu-socials__item"><a href="https://www.instagram.com/"
-                                        class="menu-socials__link menu-socials_theme_dark"><svg
+                                        class="menu-socials__link menu-socials_theme-dark"><svg
                                             class="menu-socials__icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-instagram2"></use>
                                         </svg></a></li>
                                 <li class="menu-socials__item"><a href="https://twitter.com/"
-                                        class="menu-socials__link menu-socials_theme_dark">
+                                        class="menu-socials__link menu-socials_theme-dark">
                                         <svg class="menu-socials__icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-twitter1"></use>
                                         </svg></a></li>
                                 <li class="menu-socials__item"><a href="https://www.facebook.com/"
-                                        class="menu-socials__link menu-socials_theme_dark">
+                                        class="menu-socials__link menu-socials_theme-dark">
                                         <svg class="menu-socials__icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-facebook1"></use>
                                         </svg></a></li>
                                 <li class="menu-socials__item"><a href="https://www.linkedin.com/"
-                                        class="menu-socials__link menu-socials_theme_dark">
+                                        class="menu-socials__link menu-socials_theme-dark">
                                         <svg class="menu-socials__icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-linkedin1"></use>
                                         </svg></a></li>
@@ -145,26 +144,26 @@
 
                     <li class="team-list__item"><img src="./images/img2.jpg" alt="Ольга Репина" width="270" />
                         <div class="team-list__wrapper">
-                            <h3 class="team-list__subtitle">Ольга Репина</h3>
+                            <h3 class="team-list__title">Ольга Репина</h3>
                             <p lang="en" class="team-list__text">Frontend Developer</p>
                             <ul class="menu-socials team-list__menu-socials list">
                                 <li class="menu-socials__item"><a href="https://www.instagram.com/"
-                                        class="menu-socials__link menu-socials_theme_dark"><svg
+                                        class="menu-socials__link menu-socials_theme-dark"><svg
                                             class="menu-socials__icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-instagram2"></use>
                                         </svg></a></li>
                                 <li class="menu-socials__item"><a href="https://twitter.com/"
-                                        class="menu-socials__link menu-socials_theme_dark">
+                                        class="menu-socials__link menu-socials_theme-dark">
                                         <svg class="menu-socials__icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-twitter1"></use>
                                         </svg></a></li>
                                 <li class="menu-socials__item"><a href="https://www.facebook.com/"
-                                        class="menu-socials__link menu-socials_theme_dark">
+                                        class="menu-socials__link menu-socials_theme-dark">
                                         <svg class="menu-socials__icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-facebook1"></use>
                                         </svg></a></li>
                                 <li class="menu-socials__item"><a href="https://www.linkedin.com/"
-                                        class="menu-socials__link menu-socials_theme_dark">
+                                        class="menu-socials__link menu-socials_theme-dark">
                                         <svg class="menu-socials__icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-linkedin1"></use>
                                         </svg></a></li>
@@ -174,26 +173,26 @@
 
                     <li class="team-list__item"><img src="./images/img3.jpg" alt="Николай Тарасов" width="270" />
                         <div class="team-list__wrapper">
-                            <h3 class="team-list__subtitle">Николай Тарасов</h3>
+                            <h3 class="team-list__title">Николай Тарасов</h3>
                             <p lang="en" class="team-list__text">Marketing</p>
                             <ul class="menu-socials team-list__menu-socials list">
                                 <li class="menu-socials__item"><a href="https://www.instagram.com/"
-                                        class="menu-socials__link menu-socials_theme_dark"><svg
+                                        class="menu-socials__link menu-socials_theme-dark"><svg
                                             class="menu-socials__icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-instagram2"></use>
                                         </svg></a></li>
                                 <li class="menu-socials__item"><a href="https://twitter.com/"
-                                        class="menu-socials__link menu-socials_theme_dark">
+                                        class="menu-socials__link menu-socials_theme-dark">
                                         <svg class="menu-socials__icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-twitter1"></use>
                                         </svg></a></li>
                                 <li class="menu-socials__item"><a href="https://www.facebook.com/"
-                                        class="menu-socials__link menu-socials_theme_dark">
+                                        class="menu-socials__link menu-socials_theme-dark">
                                         <svg class="menu-socials__icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-facebook1"></use>
                                         </svg></a></li>
                                 <li class="menu-socials__item"><a href="https://www.linkedin.com/"
-                                        class="menu-socials__link menu-socials_theme_dark">
+                                        class="menu-socials__link menu-socials_theme-dark">
                                         <svg class="menu-socials__icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-linkedin1"></use>
                                         </svg></a></li>
@@ -203,26 +202,26 @@
 
                     <li class="team-list__item"><img src="./images/img4.jpg" alt="Михаил Ермаков" width="270" />
                         <div class="team-list__wrapper">
-                            <h3 class="team-list__subtitle">Михаил Ермаков</h3>
+                            <h3 class="team-list__title">Михаил Ермаков</h3>
                             <p lang="en" class="team-list__text">UI Designer</p>
                             <ul class="menu-socials team-list__menu-socials list">
                                 <li class="menu-socials__item"><a href="https://www.instagram.com/"
-                                        class="menu-socials__link menu-socials_theme_dark"><svg
+                                        class="menu-socials__link menu-socials_theme-dark"><svg
                                             class="menu-socials__icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-instagram2"></use>
                                         </svg></a></li>
                                 <li class="menu-socials__item"><a href="https://twitter.com/"
-                                        class="menu-socials__link menu-socials_theme_dark">
+                                        class="menu-socials__link menu-socials_theme-dark">
                                         <svg class="menu-socials__icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-twitter1"></use>
                                         </svg></a></li>
                                 <li class="menu-socials__item"><a href="https://www.facebook.com/"
-                                        class="menu-socials__link menu-socials_theme_dark">
+                                        class="menu-socials__link menu-socials_theme-dark">
                                         <svg class="menu-socials__icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-facebook1"></use>
                                         </svg></a></li>
                                 <li class="menu-socials__item"><a href="https://www.linkedin.com/"
-                                        class="menu-socials__link menu-socials_theme_dark">
+                                        class="menu-socials__link menu-socials_theme-dark">
                                         <svg class="menu-socials__icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-linkedin1"></use>
                                         </svg></a></li>
@@ -236,27 +235,27 @@
             <div class="container">
                 <h2 class="section__title">Постоянные клиенты</h2>
                 <ul class="menu-clients list">
-                    <li class="menu-clients__icon"><a href="#" class="menu-clients__link"><svg
+                    <li class="menu-clients__item"><a href="#" class="menu-clients__link"><svg
                                 class="menu-clients__logo" width="106" height="60">
                                 <use href="./images/icons.svg#icon-Logo"></use>
                             </svg></a></li>
-                    <li class="menu-clients__icon"><a href="#" class="menu-clients__link"><svg
+                    <li class="menu-clients__item"><a href="#" class="menu-clients__link"><svg
                                 class="menu-clients__logo" width="106" height="60">
                                 <use href="./images/icons.svg#icon-Logo1"></use>
                             </svg></a></li>
-                    <li class="menu-clients__icon"><a href="#" class="menu-clients__link"><svg
+                    <li class="menu-clients__item"><a href="#" class="menu-clients__link"><svg
                                 class="menu-clients__logo" width="106" height="60">
                                 <use href="./images/icons.svg#icon-Logo2"></use>
                             </svg></a></li>
-                    <li class="menu-clients__icon"><a href="#" class="menu-clients__link"><svg
+                    <li class="menu-clients__item"><a href="#" class="menu-clients__link"><svg
                                 class="menu-clients__logo" width="106" height="60">
                                 <use href="./images/icons.svg#icon-Logo3"></use>
                             </svg></a></li>
-                    <li class="menu-clients__icon"><a href="#" class="menu-clients__link"><svg
+                    <li class="menu-clients__item"><a href="#" class="menu-clients__link"><svg
                                 class="menu-clients__logo" width="106" height="60">
                                 <use href="./images/icons.svg#icon-Logo4"></use>
                             </svg></a></li>
-                    <li class="menu-clients__icon"><a href="#" class="menu-clients__link"><svg
+                    <li class="menu-clients__item"><a href="#" class="menu-clients__link"><svg
                                 class="menu-clients__logo" width="106" height="60">
                                 <use href="./images/icons.svg#icon-Logo5"></use>
                             </svg></a></li>

@@ -1,10 +1,10 @@
 .menu-clients,
-.menu-clients__icon,
+.menu-clients__item,
 .menu-clients__link {
 	@extend %align;
 }
 
-.menu-clients__icon {
+.menu-clients__item {
 	width: 170px;
 	height: 92px;
 

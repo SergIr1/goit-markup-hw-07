@@ -6,21 +6,20 @@
 @import "./base/section";
 @import "./base/container";
 
-@import "./component/modal-button";
-@import "./component/section-title";
-@import "./component/backdrop";
-@import "./component/modal-window";
-@import "./component/modal-form";
-@import "./component/social";
-@import "./component/logo";
+@import "./components/modal-button";
+@import "./components/backdrop";
+@import "./components/modal-window";
+@import "./components/modal-form";
+@import "./components/social";
+@import "./components/logo";
 
-@import "./components/main-page/header";
-@import "./components/main-page/hero";
-@import "./components/main-page/features";
-@import "./components/main-page/promo";
-@import "./components/main-page/team";
-@import "./components/main-page/clients";
-@import "./components/main-page/footer";
+@import "./layout/main-page/header";
+@import "./layout/main-page/hero";
+@import "./layout/main-page/features";
+@import "./layout/main-page/promo";
+@import "./layout/main-page/team";
+@import "./layout/main-page/clients";
+@import "./layout/main-page/footer";
 
-@import "./components/portfolio/filtr-btn";
-@import "./components/portfolio/cards";
+@import "./layout/portfolio/filtr-btn";
+@import "./layout/portfolio/cards";
